@@ -39,7 +39,12 @@ function requestHandler (req,res) {
         res.end();
 }
 
-module.exports = {
-    handler: requestHandler,
-    someText : 'Some hard coded text'
-};
+// module.exports = {
+//     handler: requestHandler,
+//     someText : 'Some hard coded text'
+// };
+
+
+// if not node.js you would need to write export.module.blanks
+exports.handler = requestHandler;
+exports.someText = 'Some hard coded text';
