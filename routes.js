@@ -46,5 +46,8 @@ function requestHandler (req,res) {
 
 
 // if not node.js you would need to write export.module.blanks
+// module.exports.handler = requestHandler;
+// module.exports.someText = 'Some hard coded text';
+
 exports.handler = requestHandler;
 exports.someText = 'Some hard coded text';
