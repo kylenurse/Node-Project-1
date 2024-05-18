@@ -6,7 +6,6 @@ const shopRoutes = require('./routes/shop')
 const adminRoutes = require('./routes/admin')
 
 
-
 const app = express();
 app.get('/favicon.ico', (req, res) => res.status(204));
 
