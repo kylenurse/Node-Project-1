@@ -1,13 +1,13 @@
 const http = require('http');
 const bodyParser = require('body-parser');
 const express = require('express');
-
-
 const shopRoutes = require('./routes/shop')
 const adminRoutes = require('./routes/admin');
 const path = require('path');
 
 const app = express();
+app.use(express.static(path.join('public')));
+
 app.get('/favicon.ico', (req, res) => res.status(204));
 
 app.use(bodyParser.urlencoded({
